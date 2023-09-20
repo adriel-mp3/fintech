@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import DateRange from "../components/DateRange/DateRange";
 
 const Header = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <div>
+      <DateRange />
+    </div>
+  );
+};
 
-export default Header
+export default Header;
