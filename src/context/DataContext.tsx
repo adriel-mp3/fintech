@@ -3,7 +3,7 @@ import useFetch from "../hooks/useFetch";
 import getNDaysAgo from "../utils/getNDaysAgo";
 
 type IDataContext = {
-  data: ISales[] | null;
+  data: Sales[] | null;
   loading: boolean;
   error: string | null;
   start: string;
@@ -15,7 +15,7 @@ type IDataContext = {
 type SalesStatusPayment = "processando" | "pago" | "falha";
 type SalesTypePayment = "cartao" | "boleto" | "pix";
 
-type ISales = {
+type Sales = {
   id: string;
   nome: string;
   preco: number;
