@@ -3,6 +3,7 @@ import Sidenav from "./layout/Sidenav";
 import Header from "./layout/Header";
 import Resume from "./pages/Resume/Resume";
 import { DataContextProvider } from "./context/DataContext";
+import Sales from "./pages/Sales/Sales";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <main>
           <Header />
           <Resume />
+          <Sales />
         </main>
       </div>
     </DataContextProvider>
