@@ -3,7 +3,7 @@ import { useData } from "../../context/DataContext";
 
 const Resume = () => {
   const { data } = useData();
-  
+
   if (!data) return null;
   return (
     <section>
@@ -12,7 +12,7 @@ const Resume = () => {
           <h2>Vendas</h2>
           <span>
             {data
-              .filter((item) => item.status === "falha")
+              .filter((item) => item.status !== "falha")
               .reduce((acc, item) => acc + item.preco, 0)
               .toLocaleString("pt-br", { style: "currency", currency: "BRL" })}
           </span>
@@ -35,6 +35,7 @@ const Resume = () => {
               .toLocaleString("pt-br", { style: "currency", currency: "BRL" })}
           </span>
         </div>
+        <div className="graph">graph</div>
       </div>
     </section>
   );
