@@ -3,7 +3,7 @@ import useFetch from "../hooks/useFetch";
 import getNDaysAgo from "../utils/getNDaysAgo";
 
 type IDataContext = {
-  data: Sales[] | null;
+  data: Sale[] | null;
   loading: boolean;
   error: string | null;
   start: string;
@@ -15,7 +15,7 @@ type IDataContext = {
 type SalesStatusPayment = "processando" | "pago" | "falha";
 type SalesTypePayment = "cartao" | "boleto" | "pix";
 
-type Sales = {
+export type Sale = {
   id: string;
   nome: string;
   preco: number;
@@ -37,7 +37,7 @@ export const DataContextProvider = ({ children }: React.PropsWithChildren) => {
   const [start, setStart] = React.useState(getNDaysAgo(30));
   const [final, setFinal] = React.useState(getNDaysAgo(0));
 
-  const { data, loading, error } = useFetch<Sales[]>(
+  const { data, loading, error } = useFetch<Sale[]>(
     `https://data.origamid.dev/vendas/?inicio=${start}&final=${final}`
   );
   
