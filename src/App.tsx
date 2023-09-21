@@ -1,7 +1,7 @@
 import React from "react";
 import Sidenav from "./layout/Sidenav";
 import Header from "./layout/Header";
-import Resume from "./pages/Resume";
+import Resume from "./pages/Resume/Resume";
 import { DataContextProvider } from "./context/DataContext";
 
 function App() {
