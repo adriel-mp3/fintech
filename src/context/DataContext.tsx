@@ -19,8 +19,8 @@ type Sales = {
   id: string;
   nome: string;
   preco: number;
-  status: SalesTypePayment;
-  pagamento: SalesStatusPayment;
+  status: SalesStatusPayment;
+  pagamento: SalesTypePayment;
   data: string;
   parcelas: number | null;
 };
