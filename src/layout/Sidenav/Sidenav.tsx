@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import styles from "./Sidenav.module.css";
 import resumo from "../../assets/icons/resumo.svg";
 import vendas from "../../assets/icons/vendas.svg";
@@ -10,19 +11,19 @@ import FintechSVG from "../../assets/FintechSVG";
 const Sidenav = () => {
   return (
     <nav className={`${styles.sidenav} box bg-3`}>
-      <FintechSVG title="Fintech Logo"/>
+      <FintechSVG title="Fintech Logo" />
       <ul>
         <li>
           <span>
             <img src={resumo} alt="" />
           </span>
-          <a href="">Resumo</a>
+          <NavLink to='/' end>Resumo</NavLink>
         </li>
         <li>
           <span>
             <img src={vendas} alt="" />
           </span>
-          <a href="">Vendas</a>
+          <NavLink to='/vendas'>Vendas</NavLink>
         </li>
         <li>
           <span>
