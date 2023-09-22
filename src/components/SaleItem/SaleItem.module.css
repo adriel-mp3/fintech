@@ -15,3 +15,13 @@
   color: inherit;
   font-family: monospace;
 }
+
+@media screen and (max-width: 100px) {
+  .sale {
+    grid-template-columns: 1fr;
+  }
+
+  .sale {
+    justify-self: start;
+  }
+}

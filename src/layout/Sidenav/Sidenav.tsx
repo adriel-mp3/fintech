@@ -6,6 +6,7 @@ import vendas from "../../assets/icons/vendas.svg";
 import webhooks from "../../assets/icons/webhooks.svg";
 import configuracoes from "../../assets/icons/configuracoes.svg";
 import sair from "../../assets/icons/sair.svg";
+import contato from "../../assets/icons/contato.svg";
 import FintechSVG from "../../assets/FintechSVG";
 
 const Sidenav = () => {
@@ -36,6 +37,12 @@ const Sidenav = () => {
             <img src={configuracoes} alt="" />
           </span>
           <a href=""> Configurações</a>
+        </li>
+        <li>
+          <span>
+            <img src={contato} alt="" />
+          </span>
+          <a href=""> Contato</a>
         </li>
         <li>
           <span>
