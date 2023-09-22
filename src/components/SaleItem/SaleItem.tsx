@@ -1,12 +1,13 @@
 import styles from "./SaleItem.module.css";
 import { Sale } from "../../context/DataContext";
+import { NavLink } from "react-router-dom";
 
 const SaleItem = ({ sale }: { sale: Sale }) => {
   return (
     <li className={`${styles.sale} box`}>
-      <a className="sale id" href="">
+      <NavLink to={`/vendas/${sale.id}`} className="sale">
         {sale.id}
-      </a>
+      </NavLink>
       <div>{sale.nome}</div>
       <div>
         {sale.preco.toLocaleString("pt-br", {
