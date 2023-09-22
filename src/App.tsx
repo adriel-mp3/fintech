@@ -1,6 +1,6 @@
 import React from "react";
-import Sidenav from "./layout/Sidenav";
-import Header from "./layout/Header";
+import Sidenav from "./layout/Sidenav/Sidenav";
+import Header from "./layout/Header/Header";
 import Resume from "./pages/Resume/Resume";
 import { DataContextProvider } from "./context/DataContext";
 import Sales from "./pages/Sales/Sales";
