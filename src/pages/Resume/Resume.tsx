@@ -1,5 +1,6 @@
 import styles from "./Resume.module.css";
 import { useData } from "../../context/DataContext";
+import SalesGraph from "../../components/SalesGraph/SalesGraph";
 
 const Resume = () => {
   const { data } = useData();
@@ -35,8 +36,8 @@ const Resume = () => {
               .toLocaleString("pt-br", { style: "currency", currency: "BRL" })}
           </span>
         </div>
-        <div className="graph">graph</div>
       </div>
+        <SalesGraph data={data}/>
     </section>
   );
 };
