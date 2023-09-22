@@ -4,6 +4,8 @@ import Header from "./layout/Header/Header";
 import Resume from "./pages/Resume/Resume";
 import { DataContextProvider } from "./context/DataContext";
 import Sales from "./pages/Sales/Sales";
+import { Routes, Route } from "react-router-dom";
+import Sale from "./pages/Sale/Sale";
 
 function App() {
   return (
@@ -12,8 +14,11 @@ function App() {
         <Sidenav />
         <main>
           <Header />
-          <Resume />
-          <Sales />
+          <Routes>
+            <Route path="/" element={<Resume />} />
+            <Route path="/vendas" element={<Sales />} />
+            <Route path="/vendas/:id" element={<Sale />} />
+          </Routes>
         </main>
       </div>
     </DataContextProvider>
