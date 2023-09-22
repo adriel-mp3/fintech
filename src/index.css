@@ -1,8 +1,8 @@
 html {
-  --color-1: #463220;
-  --color-2: #66593c;
-  --color-3: #eceadd;
-  --color-4: #f7f8f5;
+  --color-1: #000000;
+  --color-2: #111111;
+  --color-3: #fcc203;
+  --color-4: #f5f5f5;
   --color-5: #ffffff;
   --gap-s: 0.625rem;
   --gap: 1.25rem;
@@ -48,6 +48,7 @@ ul {
   padding: var(--gap);
   border-radius: var(--gap);
   background: var(--color-5);
+  outline:1px solid var(--color-1)
 }
 
 .flex {
