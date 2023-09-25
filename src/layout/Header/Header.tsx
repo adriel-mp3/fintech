@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Header.module.css";
-import DateRange from "../../components/DateRange/DateRange";
-import MonthOptions from "../../components/MonthOptions/MonthOptions";
+import DateRange from "@/components/DateRange/DateRange";
+import MonthOptions from "@/components/MonthOptions/MonthOptions";
 import { useLocation } from "react-router-dom";
 
 const Header = () => {

@@ -1,13 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Sidenav.module.css";
-import resumo from "../../assets/icons/resumo.svg";
-import vendas from "../../assets/icons/vendas.svg";
-import webhooks from "../../assets/icons/webhooks.svg";
-import configuracoes from "../../assets/icons/configuracoes.svg";
-import sair from "../../assets/icons/sair.svg";
-import contato from "../../assets/icons/contato.svg";
-import FintechSVG from "../../assets/FintechSVG";
+import resumo from "@/assets/icons/resumo.svg";
+import vendas from "@/assets/icons/vendas.svg";
+import webhooks from "@/assets/icons/webhooks.svg";
+import configuracoes from "@/assets/icons/configuracoes.svg";
+import sair from "@/assets/icons/sair.svg";
+import contato from "@/assets/icons/contato.svg";
+import FintechSVG from "@/assets/FintechSVG";
 
 const Sidenav = () => {
   return (
@@ -18,13 +18,15 @@ const Sidenav = () => {
           <span>
             <img src={resumo} alt="" />
           </span>
-          <NavLink to='/' end>Resumo</NavLink>
+          <NavLink to="/" end>
+            Resumo
+          </NavLink>
         </li>
         <li>
           <span>
             <img src={vendas} alt="" />
           </span>
-          <NavLink to='/vendas'>Vendas</NavLink>
+          <NavLink to="/vendas">Vendas</NavLink>
         </li>
         <li>
           <span>

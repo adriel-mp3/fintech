@@ -1,5 +1,5 @@
 import styles from "./SaleItem.module.css";
-import { Sale } from "../../context/DataContext";
+import { Sale } from "@/context/DataContext";
 import { NavLink } from "react-router-dom";
 
 const SaleItem = ({ sale }: { sale: Sale }) => {

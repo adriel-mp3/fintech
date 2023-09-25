@@ -1,6 +1,6 @@
 import styles from "./MonthSelect.module.css";
-import { useData } from "../../../context/DataContext";
-import formatDate from "../../../utils/formatDate";
+import { useData } from "@/context/DataContext";
+import formatDate from "@/utils/formatDate";
 
 function getMonthName(n: number) {
   const date = new Date();

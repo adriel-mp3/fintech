@@ -1,5 +1,5 @@
 import React from "react";
-import { Sale } from "../../context/DataContext";
+import { Sale } from "@/context/DataContext";
 import {
   LineChart,
   XAxis,

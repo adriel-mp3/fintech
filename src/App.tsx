@@ -1,11 +1,11 @@
 import React from "react";
-import Sidenav from "./layout/Sidenav/Sidenav";
-import Header from "./layout/Header/Header";
-import Resume from "./pages/Resume/Resume";
-import { DataContextProvider } from "./context/DataContext";
-import Sales from "./pages/Sales/Sales";
+import Sidenav from "@/layout/Sidenav/Sidenav";
+import Header from "@/layout/Header/Header";
+import Resume from "@/pages/Resume/Resume";
+import { DataContextProvider } from "@/context/DataContext";
+import Sales from "@/pages/Sales/Sales";
 import { Routes, Route } from "react-router-dom";
-import Sale from "./pages/Sale/Sale";
+import Sale from "@/pages/Sale/Sale";
 
 function App() {
   return (
